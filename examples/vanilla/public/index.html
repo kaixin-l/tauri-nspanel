@@ -1,5 +1,51 @@
-<html>
-  <body>
-    <div>Plugin example</div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NSPanel</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      /* Transparent background */
+      overflow: hidden;
+    }
+
+    #nspanel {
+      position: fixed;
+      bottom: 80px;
+      /* Align just above Dock */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      /* Default narrow width */
+      height: 5px;
+      /* Default narrow height */
+      background-color: gray;
+      /* Light gray color */
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+      /* Smooth transition effect */
+      z-index: 9999;
+    }
+
+    #nspanel:hover {
+      width: 200px;
+      /* Expand width */
+      height: 50px;
+      /* Expand height */
+      background-color: #333333;
+      /* Dark gray on hover */
+      border-radius: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nspanel"></div>
+</body>
+
 </html>
