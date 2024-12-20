@@ -5,7 +5,9 @@
   },
   "build": {
     "distDir": "../public",
-    "devPath": "../public"
+    "devPath": "../public",
+    "beforeDevCommand": "",
+    "beforeBuildCommand": ""
   },
   "tauri": {
     "bundle": {
@@ -44,11 +46,12 @@
       "active": false
     },
     "allowlist": {
-      "all": false
+      "all": true
     },
     "macOSPrivateApi": true,
     "windows": [
       {
+        "label": "main",
         "title": "NSPanel",
         "width": 400,
         "height": 200,
@@ -64,7 +67,7 @@
       }
     ],
     "security": {
-      "csp": "default-src blob: data: filesystem: ws: wss: http: https: tauri: 'unsafe-eval' 'unsafe-inline' 'self' img-src: 'self'"
+      "csp": "default-src 'self' 'unsafe-inline' 'unsafe-eval' data: tauri:"
     }
   }
 }

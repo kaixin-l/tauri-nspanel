@@ -1,17 +1,17 @@
 {
   "name": "app",
+  "private": true,
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "tauri": "tauri",
-    "tauri dev": "tauri dev",
-    "tauri build": "tauri build"
+    "dev": "tauri dev",
+    "build": "tauri build"
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "@tauri-apps/cli": "^1.6.2"
+  "devDependencies": {
+    "@tauri-apps/api": "^1.6.0",
+    "@tauri-apps/cli": "^1.6.3"
   }
 }
